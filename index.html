@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <div class="obj1"></div>
+    <div class="obj2"></div>
+    <div class="wrapper">
+        
+        <div class="card-wrapper">
+            <div class="user-img">
+                <img src="./assets/profile.jpg" alt="user">
+            </div>
+            <div class="user-name"><h2>Tanishk Dhaka</h2></div>
+            <div class="intro"><h3>Software Developer</h3></div>
+            <div class="button-group">
+                <button onclick="openModal()" class="btn-share btn-card">
+                <i class="fa-solid fa-share"></i>
+                <div >Share My Profile</div>
+                </button>
+                
+                <button onclick="window.open('https://github.com/TanniJaat','_blank');" class="btn-follow btn-card">Follow Me</button>
+            </div>
+        </div>
+        
+        <div class="modal">
+            <div class="modal-header">
+               <h1>Share My Profile</h1>
+               <div>
+                <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+               </div>
+            </div>
+            <div>
+                <h3>Share this via</h3>
+                 <div class="icon-container">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftannijaat.github.io%2Fprofile-card%2F" class="icon" id="facebook">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?text=https%3A%2F%2Ftannijaat.github.io%2Fprofile-card%2F" class="icon" id="twitter">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icon" id="instagram">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="icon" id="whatsapp">
+                      <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="icon" id="telegram">
+                      <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Overlay -->
+  <div class="overlay" onclick="closeModal()"></div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
